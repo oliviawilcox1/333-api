@@ -135,7 +135,8 @@ router.get('/favorites', (req, res, next) => {
 
 router.post('/favorites', requireToken, (req, res, next) => {
 	// set owner of new example to be current user
-	req.body.product.owner = req.user.id
+	req.body.favorite.owner = req.user.id
+
 
 	Favorite.create(req.body.favorite)
 		// respond to succesful `create` with status 201 and JSON of new "example"
