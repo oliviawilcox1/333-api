@@ -30,32 +30,32 @@ const startProducts = [
     category: "toys",
     reviews: [   
     {
-        rating: 3,
-        review: ""
+        rating: 4,
+        review: "I gave it to my kid and they like it!"
     }]
 },{
     name:  "Donut Plush" ,
     image:  "https://m.media-amazon.com/images/I/61Yaa9wr+VL._AC_SY450_.jpg", 
-    description: "",
+    description: "A plush pillow to make you hungry!",
     price: 14.99, 
     available: true,
     category: "toys",
     reviews: [   
     {
-        rating: ,
-        review: ""
+        rating: 4,
+        review: "Extremely comfortable and makes me hungry"
     }]
 },{
     name:  "Cat Plush" ,
     image:  "https://m.media-amazon.com/images/I/71KREj0IRbL._AC_SY450_.jpg", 
-    description: "",
+    description: "A cat pillow, because who doesn't love cats?",
     price: 34.99, 
     available: true,
     category: "toys",
     reviews: [   
     {
-        rating: ,
-        review: ""
+        rating: 3,
+        review: "Very cute but not extremely comfortable!"
     }]
 },{
     name:  "Mug t-shirt" ,
@@ -118,9 +118,9 @@ const startProducts = [
         review: "I'm glad I got this book, I have know knowledge on cats!  I can't wait to learn more about them"
     }]
 },{
-    name:  "The doughnut cook book" ,
+    name:  "The Doughnut Cook Book" ,
     image:  "https://m.media-amazon.com/images/I/71XEIa7bG3L._AC_UL320_.jpg", 
-    description: "All you need to know how to bake doughnuts! by Williams-Sonoma Test Kitchen",
+    description: "All you need to know how to bake doughnuts! By Williams-Sonoma Test Kitchen",
     price: 11.59, 
     available: true,
     category: "books",
@@ -132,7 +132,7 @@ const startProducts = [
 },{
     name:  "The Art of Mixology: Classic Cocktails and Curious Concoctions" ,
     image:  "https://m.media-amazon.com/images/I/91BaXFsLeSL._AC_UY218_.jpg", 
-    description: "All you need to know how to make mix drinks! by Parragon Books",
+    description: "All you need to know how to make mix drinks! By Parragon Books",
     price: 15.99, 
     available: true,
     category: "books",
@@ -153,7 +153,176 @@ const startProducts = [
         rating: 2,
         review: "Not even 144hrz, very disappointed"
     }]
-}
+},,{
+    name:  "Electronic Keyboard" ,
+    image:  "https://m.media-amazon.com/images/I/61Yaa9wr+VL._AC_SY450_.jpg", 
+    description: "The best piano keyboard with weighted keys and more!",
+    price: 2899.99, 
+    available: true,
+    category: "music",
+    reviews: [   
+    {
+        rating: 5,
+        review: "I have been trying to find a new keyboard that reminds me of the real thing. This keyboard feels just like a real piano!"
+    }]
+},{
+    name:  "" ,
+    image:  "", 
+    description: "",
+    price: , 
+    available: ,
+    category: "",
+    reviews: [   
+    {
+        rating: ,
+        review: ""
+    }]
+
+},{
+    name:  "" ,
+    image:  "", 
+    description: "",
+    price: , 
+    available: true,
+    category: "computers",
+    reviews: [   
+    {
+        rating: 2,
+        review: "Not even 144hrz, very disappointed"
+    }]
+
+},{
+    name:  "Pro Display XDR" ,
+    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+    description: "Apple's Best Quality Monitor for the true experience!",
+    price: 4999, 
+    available: true,
+    category: "computers",
+    reviews: [   
+    {
+        rating: 2,
+        review: "Not even 144hrz, very disappointed"
+    }]
+
+},{
+    name:  "Pro Display XDR" ,
+    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+    description: "Apple's Best Quality Monitor for the true experience!",
+    price: 4999, 
+    available: true,
+    category: "computers",
+    reviews: [   
+    {
+        rating: 2,
+        review: "Not even 144hrz, very disappointed"
+    }]
+
+},{
+    name:  "Pro Display XDR" ,
+    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+    description: "Apple's Best Quality Monitor for the true experience!",
+    price: 4999, 
+    available: true,
+    category: "computers",
+    reviews: [   
+    {
+        rating: 2,
+        review: "Not even 144hrz, very disappointed"
+    }]
+
+},{
+    name:  "Pro Display XDR" ,
+    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+    description: "Apple's Best Quality Monitor for the true experience!",
+    price: 4999, 
+    available: true,
+    category: "computers",
+    reviews: [   
+    {
+        rating: 2,
+        review: "Not even 144hrz, very disappointed"
+    }]
+
+},{
+    name:  "Pro Display XDR" ,
+    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+    description: "Apple's Best Quality Monitor for the true experience!",
+    price: 4999, 
+    available: true,
+    category: "computers",
+    reviews: [   
+    {
+        rating: 2,
+        review: "Not even 144hrz, very disappointed"
+    }]
+
+ }
+//  ,{
+//     name:  "Pro Display XDR" ,
+//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+//     description: "Apple's Best Quality Monitor for the true experience!",
+//     price: 4999, 
+//     available: true,
+//     category: "computers",
+//     reviews: [   
+//     {
+//         rating: 2,
+//         review: "Not even 144hrz, very disappointed"
+//     }]
+
+// },{
+//     name:  "Pro Display XDR" ,
+//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+//     description: "Apple's Best Quality Monitor for the true experience!",
+//     price: 4999, 
+//     available: true,
+//     category: "computers",
+//     reviews: [   
+//     {
+//         rating: 2,
+//         review: "Not even 144hrz, very disappointed"
+//     }]
+
+// },{
+//     name:  "Pro Display XDR" ,
+//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+//     description: "Apple's Best Quality Monitor for the true experience!",
+//     price: 4999, 
+//     available: true,
+//     category: "computers",
+//     reviews: [   
+//     {
+//         rating: 2,
+//         review: "Not even 144hrz, very disappointed"
+//     }]
+
+// },{
+//     name:  "Pro Display XDR" ,
+//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+//     description: "Apple's Best Quality Monitor for the true experience!",
+//     price: 4999, 
+//     available: true,
+//     category: "computers",
+//     reviews: [   
+//     {
+//         rating: 2,
+//         review: "Not even 144hrz, very disappointed"
+//     }]
+
+// },{
+//     name:  "Pro Display XDR" ,
+//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
+//     description: "Apple's Best Quality Monitor for the true experience!",
+//     price: 4999, 
+//     available: true,
+//     category: "computers",
+//     reviews: [   
+//     {
+//         rating: 2,
+//         review: "Not even 144hrz, very disappointed"
+//     }]
+
+// }
 ]
 
 
