@@ -44,6 +44,24 @@ router.get('/products', (req, res, next) => {
 		.catch(next)
 })
 
+// INDEX
+// get products by category
+router.get('/products/:category', (req, res, next) => {
+	const category = req.params.category
+	Product.find({category:category})
+		.then((products) => {
+			// `examples` will be an array of Mongoose documents
+			// we want to convert each one to a POJO, so we use `.map` to
+			// apply `.toObject` to each one
+			return products.map((product) => product.toObject())
+		})
+		// respond with status 200 and JSON of the examples
+		.then((products) => res.status(200).json({ products: products }))
+		// if an error occurs, pass it to the handler
+		.catch(next)
+})
+
+
 // SHOW
 // GET /examples/5a7db6c74d55bc51bdf39793
 router.get('/products/:id', (req, res, next) => {
@@ -120,7 +138,7 @@ router.delete('/products/:id', requireToken, (req, res, next) => {
 
 
 router.get('/favorites', (req, res, next) => {
-	Favorite.find()
+	Favorite.find({})
 		.populate('product')
 		.populate('owner')
 		.then((favorites) => {
