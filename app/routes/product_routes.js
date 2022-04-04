@@ -46,7 +46,7 @@ router.get('/products', (req, res, next) => {
 
 // INDEX
 // get products by category
-router.get('/products/:category', (req, res, next) => {
+router.get('/products/category/:category', (req, res, next) => {
 	const category = req.params.category
 	Product.find({category:category})
 		.then((products) => {
