@@ -5,6 +5,7 @@ const passport = require('passport')
 
 // pull in Mongoose model for examplesƒ
 const Product = require('../models/product')
+const Favorite = require('../models/favorite')
 
 // this is a collection of methods that help us detect situations when we need
 // to throw a custom error
@@ -19,7 +20,6 @@ const requireOwnership = customErrors.requireOwnership
 // this is middleware that will remove blank fields from `req.body`, e.g.
 // { example: { title: '', text: 'foo' } } -> { example: { text: 'foo' } }
 const removeBlanks = require('../../lib/remove_blank_fields')
-const product = require('../models/product')
 // passing this as a second argument to `router.<verb>` will make it
 // so that a token MUST be passed for that route to be available
 // it will also set `req.user`
@@ -109,6 +109,24 @@ router.delete('/products/:id', requireToken, (req, res, next) => {
 		})
 		// send back 204 and no content if the deletion succeeded
 		.then(() => res.sendStatus(204))
+		// if an error occurs, pass it to the handler
+		.catch(next)
+})
+
+
+
+
+
+router.get('/favorites', (req, res, next) => {
+	Favorite.find()
+		.then((favorites) => {
+			// `examples` will be an array of Mongoose documents
+			// we want to convert each one to a POJO, so we use `.map` to
+			// apply `.toObject` to each one
+			return favorites.map((favorite) => favorite.toObject())
+		})
+		// respond with status 200 and JSON of the examples
+		.then((favorites) => res.status(200).json({ favorites: favorites }))
 		// if an error occurs, pass it to the handler
 		.catch(next)
 })
