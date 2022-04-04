@@ -159,54 +159,12 @@ const startProducts = [
     description: "The best piano keyboard with weighted keys and more!",
     price: 2899.99, 
     available: true,
-    category: "music",
+    category: "electronics",
     reviews: [   
     {
         rating: 5,
         review: "I have been trying to find a new keyboard that reminds me of the real thing. This keyboard feels just like a real piano!"
     }]
-},
-// {
-//     name:  "" ,
-//     image:  "", 
-//     description: "",
-//     price: , 
-//     available: ,
-//     category: "",
-//     reviews: [   
-//     {
-//         rating: ,
-//         review: ""
-//     }]
-
-// },
-// {
-//     name:  "" ,
-//     image:  "", 
-//     description: "",
-//     price: , 
-//     available: true,
-//     category: "computers",
-//     reviews: [   
-//     {
-//         rating: 2,
-//         review: "Not even 144hrz, very disappointed"
-//     }]
-
-// }
-,{
-    name:  "Pro Display XDR" ,
-    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-    description: "Apple's Best Quality Monitor for the true experience!",
-    price: 4999, 
-    available: true,
-    category: "computers",
-    reviews: [   
-    {
-        rating: 2,
-        review: "Not even 144hrz, very disappointed"
-    }]
-
 },{
     name:  "Pro Display XDR" ,
     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
@@ -220,127 +178,177 @@ const startProducts = [
         review: "Not even 144hrz, very disappointed"
     }]
 
-},{
-    name:  "Pro Display XDR" ,
-    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-    description: "Apple's Best Quality Monitor for the true experience!",
-    price: 4999, 
+}, {
+    name:  "Asus 27 inch monitor" ,
+    image:  "https://m.media-amazon.com/images/I/81Ti9ezZJoL._AC_UL320_.jpg", 
+    description: "1440p running at 240Hz",
+    price: 840, 
     available: true,
     category: "computers",
     reviews: [   
     {
-        rating: 2,
-        review: "Not even 144hrz, very disappointed"
+        rating: 5,
+        review: "Runs smoothly and a lot more affordable than the Apple monitor"
     }]
-
 },{
-    name:  "Pro Display XDR" ,
-    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-    description: "Apple's Best Quality Monitor for the true experience!",
-    price: 4999, 
+    name:  "Acer Laptop" ,
+    image:  "https://images-na.ssl-images-amazon.com/images/I/7189iXimfWL._AC._SR360,460.jpg", 
+    description: "15.6 in monitor that runs all your basic needs!",
+    price: 369.99, 
     available: true,
     category: "computers",
     reviews: [   
     {
-        rating: 2,
-        review: "Not even 144hrz, very disappointed"
+        rating: 4,
+        review: "I have had this laptop for years and it works perfectly!"
     }]
-
 },{
-    name:  "Pro Display XDR" ,
-    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-    description: "Apple's Best Quality Monitor for the true experience!",
-    price: 4999, 
+    name:  "MacBook Air" ,
+    image:  "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1633027804000", 
+    description: "13 in monitor with Apple quality",
+    price: 999, 
     available: true,
     category: "computers",
     reviews: [   
     {
-        rating: 2,
-        review: "Not even 144hrz, very disappointed"
+        rating: 4,
+        review: "I love my MacBook Air! I just wish it was more affordable"
     }]
+},{
+    name:  "Blinker Fluid" ,
+    image:  "https://m.media-amazon.com/images/I/516nF4k5LOL._AC_SX679_.jpg", 
+    description: "A must need to repair your cars headlights!",
+    price: 101, 
+    available: true,
+    category: "automotive",
+    reviews: [   
+    {
+        rating: 1,
+        review: "I can not believe I bought this. My friend told me I needed to replace my blinker fluid every 4 years "
+    }]
+},{
+    name:  "Instant pot" ,
+    image:  "https://m.media-amazon.com/images/I/71WtwEvYDOS._AC_UY218_.jpg", 
+    description: "An instant pot with multiple features including slow cooker",
+    price: 89.99, 
+    available: true,
+    category: "kitchen",
+    reviews: [   
+    {
+        rating: 5,
+        review: "I am so glad I got this! It saves me so much time cooking for the family"
+    }]
+},{
+    name:  "Food Storage" ,
+    image:  "https://m.media-amazon.com/images/I/81TTCvQxdAL._AC_UL320_.jpg", 
+    description: "Stackable food storage for all your necessities",
+    price: 67.97, 
+    available: true,
+    category: "kitchen",
+    reviews: [   
+    {
+        rating: 4,
+        review: "These containers helped save so much space in my pantry"
+    }]
+},{
+    name:  "Blender" ,
+    image:  "https://m.media-amazon.com/images/I/71iD5RyhuaL._AC_SY879_.jpg", 
+    description: "Professional 72 Oz Countertop Blender",
+    price: 99.99, 
+    available: true,
+    category: "kitchen",
+    reviews: [   
+    {
+        rating: 4,
+        review: "I love my blender but sometimes it does not blend everything"
+    }]
+},{
+    name:  "Free Weights" ,
+    image:  "https://m.media-amazon.com/images/I/71+pOdQ7iKL._AC_SY450_.jpg", 
+    description: "Customizable Dumbbells!",
+    price: 399, 
+    available: true,
+    category: "fitness",
+    reviews: [   
+    {
+        rating: 5,
+        review: "Saves so much space in my home gym! Can not wait to get more equipment"
+    }]
+},{
+    name:  "JBL Tune 710BT Wireless Over-Ear Headphones" ,
+    image:  "https://m.media-amazon.com/images/I/619zjivnmYS._AC_SX679_.jpg", 
+    description: "Bluetooth headphones with 35 hour battery life",
+    price: 79.95, 
+    available: true,
+    category: "electronics",
+    reviews: [   
+    {
+        rating: 5,
+        review: "Awesome battery life and barely moves when working out "
+    }]
+},{
+    name:  "Cat Tower" ,
+    image:  "https://m.media-amazon.com/images/I/81vnkRKZOzL._AC_SY450_.jpg", 
+    description: "Standing at 54 in, the puurfect tower for your cats",
+    price: 59.99, 
+    available: true,
+    category: "pets",
+    reviews: [   
+    {
+        rating: 4,
+        review: "I did not know it was this big! I might need some more cats"
+    }]
+},{
+    name:  "Nikon D5600" ,
+    image:  "142267-cameras-review-nikon-d5600-review-image1-v70ie4fzdr.jpg", 
+    description: "DSLR Camera with photo and videography",
+    price: 800, 
+    available: false,
+    category: "electronics",
+    reviews: [   
+    {
+        rating: 5,
+        review: "The best camera I have ever bought! The quality is stunning and the videos are so sharp."
+    }]
+},{
+    name:  "Vitamix Blender" ,
+    image:  "e310-black-620x620.jpg", 
+    description: "The E310 Vitamix is a precision blender with a 5-year warranty.",
+    price: 350, 
+    available: true,
+    category: "kitchen",
+    reviews: [   
+    {
+        rating: 5,
+        review: "I use it every morning to make my breakfast smoothies! "
+    }]
+}, {
+    name:  "Samson Microphone" ,
+    image:  "https://m.media-amazon.com/images/I/81I5xX-vvxL._AC_SY450_.jpg", 
+    description: "Professional usb mic",
+    price: 129.98, 
+    available: true,
+    category: "electronics",
+    reviews: [   
+    {
+        rating: 5,
+        review: "I have had this mic for 4 years and still has great quality!"
+    }]
+},  {
+        name:  "Sony WH-1000xm3 bluetooth over ear headphones" ,
+        image:  "https://www.sony.com/image/1db69f3082965554b728ba8c86c0257d?fmt=png-alpha&wid=378", 
+        description: "Noise Canceling Headphones, Wireless Bluetooth Over the Ear Headset",
+        price:217.89 , 
+        available: true,
+        category: "electronics",
+        reviews: [   
+        {
+            Rating: 5,
+            review: "The WH-1000XM3 is simply sensational - the perfect long-haul travel companion, office upgrade or daily commute enhancement"
+        }]  
+}
 
- }
-//  ,{
-//     name:  "Pro Display XDR" ,
-//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-//     description: "Apple's Best Quality Monitor for the true experience!",
-//     price: 4999, 
-//     available: true,
-//     category: "computers",
-//     reviews: [   
-//     {
-//         rating: 2,
-//         review: "Not even 144hrz, very disappointed"
-//     }]
-
-// },{
-//     name:  "Pro Display XDR" ,
-//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-//     description: "Apple's Best Quality Monitor for the true experience!",
-//     price: 4999, 
-//     available: true,
-//     category: "computers",
-//     reviews: [   
-//     {
-//         rating: 2,
-//         review: "Not even 144hrz, very disappointed"
-//     }]
-
-// },{
-//     name:  "Pro Display XDR" ,
-//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-//     description: "Apple's Best Quality Monitor for the true experience!",
-//     price: 4999, 
-//     available: true,
-//     category: "computers",
-//     reviews: [   
-//     {
-//         rating: 2,
-//         review: "Not even 144hrz, very disappointed"
-//     }]
-
-// },{
-//     name:  "Pro Display XDR" ,
-//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-//     description: "Apple's Best Quality Monitor for the true experience!",
-//     price: 4999, 
-//     available: true,
-//     category: "computers",
-//     reviews: [   
-//     {
-//         rating: 2,
-//         review: "Not even 144hrz, very disappointed"
-//     }]
-
-// },{
-//     name:  "Pro Display XDR" ,
-//     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-//     description: "Apple's Best Quality Monitor for the true experience!",
-//     price: 4999, 
-//     available: true,
-//     category: "computers",
-//     reviews: [   
-//     {
-//         rating: 2,
-//         review: "Not even 144hrz, very disappointed"
-//     }]
-
-// }
 ]
-
-
-// owner: {
-//     type: mongoose.Schema.Types.ObjectId,
-//     ref: 'User',
-//     required: true,
-// }
-// first we connect to database
-// then we remove all the pets
-// then we create using the startPets array 
-// well use console logs to check if its working/errors
-
-// then at the end we close our connection 
-// console.log(mongo.connect) - should tell you its a promise
 
 
 mongoose.connect(db, {
