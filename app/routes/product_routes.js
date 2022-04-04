@@ -113,7 +113,9 @@ router.delete('/products/:id', requireToken, (req, res, next) => {
 		.catch(next)
 })
 
-
+// *******************************************
+//  Favorites Routes
+// *******************************************
 
 
 
@@ -143,6 +145,22 @@ router.post('/favorites', requireToken, (req, res, next) => {
 		// if an error occurs, pass it off to our error handler
 		// the error handler needs the error message and the `res` object so that it
 		// can send an error message back to the client
+		.catch(next)
+})
+
+
+router.delete('/favorites/:id', requireToken, (req, res, next) => {
+	Favorite.findById(req.params.id)
+		.then(handle404)
+		.then((favorite) => {
+			// throw an error if current user doesn't own `example`
+			requireOwnership(req, favorite)
+			// delete the example ONLY IF the above didn't throw
+			favorite.deleteOne()
+		})
+		// send back 204 and no content if the deletion succeeded
+		.then(() => res.sendStatus(204))
+		// if an error occurs, pass it to the handler
 		.catch(next)
 })
 
