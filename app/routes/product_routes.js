@@ -131,4 +131,21 @@ router.get('/favorites', (req, res, next) => {
 		.catch(next)
 })
 
+router.post('/favorites', requireToken, (req, res, next) => {
+	// set owner of new example to be current user
+	req.body.product.owner = req.user.id
+
+	Favorite.create(req.body.favorite)
+		// respond to succesful `create` with status 201 and JSON of new "example"
+		.then((favorite) => {
+			res.status(201).json({ favorite: favorite.toObject() })
+		})
+		// if an error occurs, pass it off to our error handler
+		// the error handler needs the error message and the `res` object so that it
+		// can send an error message back to the client
+		.catch(next)
+})
+
+
+
 module.exports = router
