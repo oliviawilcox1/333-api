@@ -121,6 +121,8 @@ router.delete('/products/:id', requireToken, (req, res, next) => {
 
 router.get('/favorites', (req, res, next) => {
 	Favorite.find()
+		.populate('product')
+		.populate('owner')
 		.then((favorites) => {
 			// `examples` will be an array of Mongoose documents
 			// we want to convert each one to a POJO, so we use `.map` to
