@@ -165,33 +165,36 @@ const startProducts = [
         rating: 5,
         review: "I have been trying to find a new keyboard that reminds me of the real thing. This keyboard feels just like a real piano!"
     }]
-},{
-    name:  "" ,
-    image:  "", 
-    description: "",
-    price: , 
-    available: ,
-    category: "",
-    reviews: [   
-    {
-        rating: ,
-        review: ""
-    }]
+},
+// {
+//     name:  "" ,
+//     image:  "", 
+//     description: "",
+//     price: , 
+//     available: ,
+//     category: "",
+//     reviews: [   
+//     {
+//         rating: ,
+//         review: ""
+//     }]
 
-},{
-    name:  "" ,
-    image:  "", 
-    description: "",
-    price: , 
-    available: true,
-    category: "computers",
-    reviews: [   
-    {
-        rating: 2,
-        review: "Not even 144hrz, very disappointed"
-    }]
+// },
+// {
+//     name:  "" ,
+//     image:  "", 
+//     description: "",
+//     price: , 
+//     available: true,
+//     category: "computers",
+//     reviews: [   
+//     {
+//         rating: 2,
+//         review: "Not even 144hrz, very disappointed"
+//     }]
 
-},{
+// }
+,{
     name:  "Pro Display XDR" ,
     image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
     description: "Apple's Best Quality Monitor for the true experience!",
