@@ -67,6 +67,7 @@ router.get('/products/category/:category', (req, res, next) => {
 router.get('/products/:id', (req, res, next) => {
 	// req.params.id will be set based on the `:id` in the route
 	Product.findById(req.params.id)
+		.populate('owner')
 		.then(handle404)
 		// if `findById` is succesful, respond with 200 and "example" JSON
 		.then((product) => res.status(200).json({ product: product.toObject() }))
