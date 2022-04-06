@@ -33,7 +33,7 @@ router.post('/reviews/:productId', removeBlanks, (req,res,next) => {
             return product.save()
         })
         // then we send the pet as json
-        /then(product => res.status(201).json({ product: product}))
+        .then(product => res.status(201).json({ product: product}))
         // catch errors and send to the handler 
         .catch(next)
 
