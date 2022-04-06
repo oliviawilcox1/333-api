@@ -142,18 +142,6 @@ const startProducts = [
         review: "Doesn't Have Mug Recipe >:( disappointed"
     }]
 },{
-    name:  "Pro Display XDR" ,
-    image:  "https://www.apple.com/v/displays/a/images/overview/compare/pro_display_xdr__cm8ftly299zm_large.jpg", 
-    description: "Apple's Best Quality Monitor for the true experience!",
-    price: 4999, 
-    available: true,
-    category: "computers",
-    reviews: [   
-    {
-        rating: 2,
-        review: "Not even 144hrz, very disappointed"
-    }]
-},,{
     name:  "Electronic Keyboard" ,
     image:  "https://m.media-amazon.com/images/I/61Yaa9wr+VL._AC_SY450_.jpg", 
     description: "The best piano keyboard with weighted keys and more!",
@@ -300,7 +288,7 @@ const startProducts = [
     }]
 },{
     name:  "Nikon D5600" ,
-    image:  "142267-cameras-review-nikon-d5600-review-image1-v70ie4fzdr.jpg", 
+    image:  "https://cdn.pocket-lint.com/r/s/1200x/assets/images/142267-cameras-review-nikon-d5600-review-image1-v70ie4fzdr.jpg", 
     description: "DSLR Camera with photo and videography",
     price: 800, 
     available: false,
@@ -312,7 +300,7 @@ const startProducts = [
     }]
 },{
     name:  "Vitamix Blender" ,
-    image:  "e310-black-620x620.jpg", 
+    image:  "https://www.thespruceeats.com/thmb/Z0lNskn1vW2_XgTtdFHwrywQoA0=/fit-in/1265x770/filters:no_upscale():max_bytes(150000):strip_icc()/vitamixe310-aad7cf997236494f809e65f456de731b.JPG", 
     description: "The E310 Vitamix is a precision blender with a 5-year warranty.",
     price: 350, 
     available: true,
