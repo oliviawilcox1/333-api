@@ -102,7 +102,7 @@ router.delete('/reviews/:productId/:reviewId', requireToken, (req,res,next)=> {
         .then(product => {
             const theReview = product.reviews.id(reviewId)
             // requrie that the deleter is the owner of the pet
-            requireOwnership(req,product)
+            // requireOwnership(req,product)
             // call remove on the toy we got on the line above 
             theReview.remove()
             // return the saved pet
