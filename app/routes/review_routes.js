@@ -55,8 +55,8 @@ router.patch('/reviews/:productId/:reviewId', requireToken, removeBlanks, (req, 
         .then(handle404)
         .then(product => {
             const theReview = product.reviews.id(reviewId)
-            console.log('this is the original toy', theReview)
-            requireOwnership(req, product)
+            console.log('this is the original product', theReview)
+            //requireOwnership(req, product)
 
             theReview.set(req.body.review)
 
