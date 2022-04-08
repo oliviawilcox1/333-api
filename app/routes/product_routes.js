@@ -29,11 +29,11 @@ const requireToken = passport.authenticate('bearer', { session: false })
 const router = express.Router()
 
 // INDEX
-// GET /examples
+// GET /products
 router.get('/products', (req, res, next) => {
 	Product.find()
 		.then((products) => {
-			// `examples` will be an array of Mongoose documents
+			// `products` will be an array of Mongoose documents
 			// we want to convert each one to a POJO, so we use `.map` to
 			// apply `.toObject` to each one
 			return products.map((product) => product.toObject())
@@ -50,7 +50,7 @@ router.get('/products/category/:category', (req, res, next) => {
 	const category = req.params.category
 	Product.find({category:category})
 		.then((products) => {
-			// `examples` will be an array of Mongoose documents
+			// `products` will be an array of Mongoose documents
 			// we want to convert each one to a POJO, so we use `.map` to
 			// apply `.toObject` to each one
 			return products.map((product) => product.toObject())
@@ -63,7 +63,7 @@ router.get('/products/category/:category', (req, res, next) => {
 
 
 // SHOW
-// GET /examples/5a7db6c74d55bc51bdf39793
+// GET /products/5a7db6c74d55bc51bdf39793
 router.get('/products/:id', (req, res, next) => {
 	// req.params.id will be set based on the `:id` in the route
 	Product.findById(req.params.id)
@@ -76,13 +76,13 @@ router.get('/products/:id', (req, res, next) => {
 })
 
 // CREATE
-// POST /examples
+// POST /products
 router.post('/products', requireToken, (req, res, next) => {
-	// set owner of new example to be current user
+	// set owner of new product to be current user
 	req.body.product.owner = req.user.id
 
 	Product.create(req.body.product)
-		// respond to succesful `create` with status 201 and JSON of new "example"
+		// respond to succesful `create` with status 201 and JSON of new "product"
 		.then((product) => {
 			res.status(201).json({ product: product.toObject() })
 		})
@@ -93,7 +93,7 @@ router.post('/products', requireToken, (req, res, next) => {
 })
 
 // UPDATE
-// PATCH /examples/5a7db6c74d55bc51bdf39793
+// PATCH /products/5a7db6c74d55bc51bdf39793
 router.patch('/products/:id', requireToken, removeBlanks, (req, res, next) => {
 	// if the client attempts to change the `owner` property by including a new
 	// owner, prevent that by deleting that key/value pair
@@ -116,14 +116,14 @@ router.patch('/products/:id', requireToken, removeBlanks, (req, res, next) => {
 })
 
 // DESTROY
-// DELETE /examples/5a7db6c74d55bc51bdf39793
+// DELETE /products/5a7db6c74d55bc51bdf39793
 router.delete('/products/:id', requireToken, (req, res, next) => {
 	Product.findById(req.params.id)
 		.then(handle404)
 		.then((product) => {
-			// throw an error if current user doesn't own `example`
+			// throw an error if current user doesn't own `product`
 			requireOwnership(req, product)
-			// delete the example ONLY IF the above didn't throw
+			// delete the product ONLY IF the above didn't throw
 			product.deleteOne()
 		})
 		// send back 204 and no content if the deletion succeeded
@@ -143,7 +143,7 @@ router.get('/favorites', (req, res, next) => {
 		.populate('product')
 		.populate('owner')
 		.then((favorites) => {
-			// `examples` will be an array of Mongoose documents
+			// `favorites` will be an array of Mongoose documents
 			// we want to convert each one to a POJO, so we use `.map` to
 			// apply `.toObject` to each one
 			return favorites.map((favorite) => favorite.toObject())
@@ -155,12 +155,12 @@ router.get('/favorites', (req, res, next) => {
 })
 
 router.post('/favorites', requireToken, (req, res, next) => {
-	// set owner of new example to be current user
+	// set owner of new favorite to be current user
 	req.body.favorite.owner = req.user.id
 
 
 	Favorite.create(req.body.favorite)
-		// respond to succesful `create` with status 201 and JSON of new "example"
+		// respond to succesful `create` with status 201 and JSON of new "favorite"
 		.then((favorite) => {
 			res.status(201).json({ favorite: favorite.toObject() })
 		})
@@ -175,9 +175,9 @@ router.delete('/favorites/:id', requireToken, (req, res, next) => {
 	Favorite.findById(req.params.id)
 		.then(handle404)
 		.then((favorite) => {
-			// throw an error if current user doesn't own `example`
+			// throw an error if current user doesn't own `favorites`
 			requireOwnership(req, favorite)
-			// delete the example ONLY IF the above didn't throw
+			// delete the favorites ONLY IF the above didn't throw
 			favorite.deleteOne()
 		})
 		// send back 204 and no content if the deletion succeeded

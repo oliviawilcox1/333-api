@@ -72,6 +72,7 @@ router.delete(
     const reviewId = req.params.reviewId;
     const productId = req.params.productId;
 
+
     Product.findById(productId)
       // if product not found throw 404
       .then(handle404)
