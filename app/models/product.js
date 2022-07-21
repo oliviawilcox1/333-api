@@ -17,15 +17,25 @@ const productSchema = new mongoose.Schema(
 		},
 		price: {
 			type: Number,
-			required: true,
 		}, 
 		available: {
 			type: Boolean,
-			required: true,
 		},
 		category: {
 			type: String,
 			required: true,
+		},
+		wheretobuy: {
+			type: String,
+		},
+		ingredienthighlights: {
+			type: String,
+		},
+		ingredients: {
+			type: String, 
+		},
+		target: {
+			type: String,
 		},
 		reviews: {
 			type: [reviewSchema]
