@@ -11,6 +11,9 @@ const productSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
+		brand: {
+			type: String
+		},
 		description: {
 			type: String,
 			required: true,
