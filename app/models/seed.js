@@ -10,7 +10,7 @@ const db = require('../../config/db')
 
 const startProducts = [
 {
-    name:  "Soonjung Hydro Barrier Cream" ,
+    name:  "Hydro Barrier Cream" ,
     image:  "https://d1flfk77wl2xk4.cloudfront.net/Assets/55/219/XXL_p0106821955.jpg", 
     brand: "Soonjung",
     description: "A Hydro Barrier Cream with 92% hydrating ingredients to repair a damaged skin barrier and protect the skin. Ingredient Highlights are Panthenol, Madecassoside and Green Tea Extract. This moisturizer is free of artificial fragrance, parabens, and artificial color. It is vegan and cruelty-free.",
