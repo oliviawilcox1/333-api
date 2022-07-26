@@ -18,6 +18,13 @@ const productSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
+		kbeauty: {
+			type: Boolean, 
+			required: true,
+		},
+		size: {
+			type: String,
+		},
 		price: {
 			type: Number,
 		}, 
