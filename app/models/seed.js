@@ -17,7 +17,7 @@ const startProducts = [
     kbeauty: true,
     size: "2.53 fl. oz / 75ml",
     price: 27.00,
-    category: "skincare",
+    category: "Skincare",
     wheretobuy: "Soko Glam",
     ingredienthighlights: "Panthenol, Madecassoside and Green Tea Extract",
     ingredients: "WATER / AQUA / EAU, GLYCERIN, PROPANEDIOL, PANTHENOL, PENTAERYTHRITYL TETRAETHYLHEXANOATE, HYDROGENATED POLY(C6-14 OLEFIN), 1,2-HEXANEDIOL, POLYMETHYLSILSESQUIOXANE, AMMONIUM ACRYLOYLDIMETHYLTAURATE/VP COPOLYMER, TREHALOSE, GLYCERYL STEARATE CITRATE, HYDROXYETHYL ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE COPOLYMER, C14-22 ALCOHOLS, ARACHIDYL ALCOHOL, GLYCERYL STEARATE, GLYCERYL CAPRYLATE, BEHENYL ALCOHOL, C12-20 ALKYL GLUCOSIDE, ETHYLHEXYLGLYCERIN, ARACHIDYL GLUCOSIDE, BUTYLENE GLYCOL, DISODIUM EDTA, SORBITAN ISOSTEARATE, ALLANTOIN, MADECASSOSIDE, SCUTELLARIA BAICALENSIS ROOT EXTRACT, GLUCOSE, CAMELLIA SINENSIS LEAF EXTRACT, TOCOPHEROL",
@@ -30,7 +30,7 @@ const startProducts = [
     kbeauty: true,
     size: "2 fl. oz / 60ml",
     price: 19.50,
-    category: "skincare",
+    category: "Skincare",
     wheretobuy: "YesStyle",
     ingredienthighlights: "Centella Extract, Niacinamide, Ceramides, Peptides and Madecassic Acid",
     ingredients: "Centella asiatica extract(49%), water, glycerin, dipropylene glycol, niacinamide, butylene glycol, 1,2-hexanediol, glycereth-26, ceramide np, sodium hyaluronate, asiaticoside, asiatic acid, madecassic acid, palmitoyl hexapeptide-12, palmitoyl tripeptide-1, palmitoyl tetrapeptide-7, palmitoyl dipeptide-10, carbomer, arginine, sclerotium gum, hydrolyzed jojoba esters, caprylyl glycol, polyglyceryl-10 myristate, panthenol, polyglyceryl-10 laurate, hydrogenated lecithin, camellia sinensis leaf extract, pancratium maritimum extract, dipotassium glycyrrhizate, disodium edta, adenosine.",
@@ -43,25 +43,26 @@ const startProducts = [
     kbeauty: true,
     size: "5 fl. oz / 150ml",
     price: 18.00,
-    category: "skincare",
+    category: "Skincare",
     wheretobuy: "YesStyle",
     ingredienthighlights: "Propolis, Honey and Hyaluronic Acid",
     ingredients: "Propolis Extract, Honey Extract, Sodium Hyaluronate, Butylene Glycol, 1,2-Hexanediol, Ethylhexylglycerin",
     target: "All Skin Types, especially sensitive skin or those who are acne-prone."
-},{
-        name:  "Sony WH-1000xm3 bluetooth over ear headphones" ,
-        image:  "https://www.sony.com/image/1db69f3082965554b728ba8c86c0257d?fmt=png-alpha&wid=378", 
-        brand: "Sony",
-        description: "Noise Canceling Headphones, Wireless Bluetooth Over the Ear Headset",
-        kbeauty: false,
-        available: true,
-        category: "electronics",
-        reviews: [   
-        {
-            Rating: 5,
-            review: "The WH-1000XM3 is simply sensational - the perfect long-haul travel companion, office upgrade or daily commute enhancement"
-        }]  
 }
+// ,{
+//         name:  "Sony WH-1000xm3 bluetooth over ear headphones" ,
+//         image:  "https://www.sony.com/image/1db69f3082965554b728ba8c86c0257d?fmt=png-alpha&wid=378", 
+//         brand: "Sony",
+//         description: "Noise Canceling Headphones, Wireless Bluetooth Over the Ear Headset",
+//         kbeauty: false,
+//         available: true,
+//         category: "electronics",
+//         reviews: [   
+//         {
+//             Rating: 5,
+//             review: "The WH-1000XM3 is simply sensational - the perfect long-haul travel companion, office upgrade or daily commute enhancement"
+//         }]  
+// }
 
 ]
 
