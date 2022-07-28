@@ -28,8 +28,9 @@ const requireToken = passport.authenticate('bearer', { session: false })
 // instantiate a router (mini app that only handles routes)
 const router = express.Router()
 
-// INDEX
-// GET /products
+// *******************************************
+//  Index Route
+
 router.get('/products', (req, res, next) => {
 	Product.find()
 		.then((products) => {
@@ -44,43 +45,83 @@ router.get('/products', (req, res, next) => {
 		.catch(next)
 })
 
-// router.get('/products/skincare', (req, res, next) => {
-// 	Product.find()
-// 		.then((products) => {
-// 			// `products` will be an array of Mongoose documents
-// 			// we want to convert each one to a POJO, so we use `.map` to
-// 			// apply `.toObject` to each one
-// 			return products.map((product) => product.toObject())
-// 		})
-// 		// respond with status 200 and JSON of the examples
-// 		.then((products) => res.status(200).json({ products: products }))
-// 		// if an error occurs, pass it to the handler
-// 		.catch(next)
-// })
+// *******************************************
+//  Kbeauty Route
 
 
+router.get('/products/kbeauty', (req, res, next) => {
+	Product.find({kbeauty: true})
+		.then((kbeauty) => {
+			return kbeauty.map((kbeauty) => kbeauty.toObject())
+		})
+		.then((kbeauty) => res.status(200).json({ kbeauty: kbeauty }))
+		.catch(next)
+})
+
+// *******************************************
+// Skincare Route
+
+router.get('/products/skincare', (req, res, next) => {
+	Product.find({category: "Skincare"})
+		.then((skincare) => {
+			return skincare.map((skincare) => skincare.toObject())
+		})
+		.then((skincare) => res.status(200).json({ skincare: skincare }))
+		.catch(next)
+})
+
+// *******************************************
+//  Haircare Route
+
+router.get('/products/haircare', (req, res, next) => {
+	Product.find({category: "Haircare"})
+		.then((haircare) => {
+			return haircare.map((haircare) => haircare.toObject())
+		})
+		.then((haircare) => res.status(200).json({ haircare: haircare }))
+		.catch(next)
+})
+
+// *******************************************
+//  Fragrance Route
+
+router.get('/products/fragrance', (req, res, next) => {
+	Product.find({category: "Fragrance"})
+		.then((fragrance) => {
+			return fragrance.map((fragrance) => fragrance.toObject())
+		})
+		.then((fragrance) => res.status(200).json({ fragrance: fragrance }))
+		.catch(next)
+})
+
+// *******************************************
+//  Bodycare Route
+
+router.get('/products/bodycare', (req, res, next) => {
+	Product.find({category: "Bodycare"})
+		.then((bodycare) => {
+			return bodycare.map((bodycare) => bodycare.toObject())
+		})
+		.then((bodycare) => res.status(200).json({ bodycare: bodycare }))
+		.catch(next)
+})
+
+// *******************************************
+//  Makeup Route
+
+router.get('/products/makeup', (req, res, next) => {
+	Product.find({category: "Makeup"})
+		.then((makeup) => {
+			return makeup.map((makeup) => makeup.toObject())
+		})
+		.then((makeup) => res.status(200).json({ makeup: makeup }))
+		.catch(next)
+})
 
 
-// INDEX
-// get products by category
-// router.get('/products/category/:category', (req, res, next) => {
-// 	const category = req.params.category
-// 	Product.find({category:category})
-// 		.then((products) => {
-// 			// `products` will be an array of Mongoose documents
-// 			// we want to convert each one to a POJO, so we use `.map` to
-// 			// apply `.toObject` to each one
-// 			return products.map((product) => product.toObject())
-// 		})
-// 		// respond with status 200 and JSON of the examples
-// 		.then((products) => res.status(200).json({ products: products }))
-// 		// if an error occurs, pass it to the handler
-// 		.catch(next)
-// })
+// *******************************************
+//  Show Route
 
-
-// SHOW
-// GET /products/5a7db6c74d55bc51bdf39793
 router.get('/products/:id', (req, res, next) => {
 	// req.params.id will be set based on the `:id` in the route
 	Product.findById(req.params.id)
@@ -92,8 +133,9 @@ router.get('/products/:id', (req, res, next) => {
 		.catch(next)
 })
 
-// CREATE
-// POST /products
+// *******************************************
+//  POST/CREATE Route
+
 router.post('/products', requireToken, (req, res, next) => {
 	// set owner of new product to be current user
 	req.body.product.owner = req.user.id
@@ -109,8 +151,9 @@ router.post('/products', requireToken, (req, res, next) => {
 		.catch(next)
 })
 
-// UPDATE
-// PATCH /products/5a7db6c74d55bc51bdf39793
+// *******************************************
+//  Update/Patch Route ex: products/5a7db6c74d55bc51bdf39793
+
 router.patch('/products/:id', requireToken, removeBlanks, (req, res, next) => {
 	// if the client attempts to change the `owner` property by including a new
 	// owner, prevent that by deleting that key/value pair
@@ -122,7 +165,6 @@ router.patch('/products/:id', requireToken, removeBlanks, (req, res, next) => {
 			// pass the `req` object and the Mongoose record to `requireOwnership`
 			// it will throw an error if the current user isn't the owner
 			requireOwnership(req, product)
-
 			// pass the result of Mongoose's `.update` to the next `.then`
 			return product.updateOne(req.body.product)
 		})
@@ -132,8 +174,9 @@ router.patch('/products/:id', requireToken, removeBlanks, (req, res, next) => {
 		.catch(next)
 })
 
-// DESTROY
-// DELETE /products/5a7db6c74d55bc51bdf39793
+// *******************************************
+// Destry/DELETE Route ex) products/5a7db6c74d55bc51bdf39793
+
 router.delete('/products/:id', requireToken, (req, res, next) => {
 	Product.findById(req.params.id)
 		.then(handle404)
@@ -148,6 +191,10 @@ router.delete('/products/:id', requireToken, (req, res, next) => {
 		// if an error occurs, pass it to the handler
 		.catch(next)
 })
+
+
+
+
 
 
 
