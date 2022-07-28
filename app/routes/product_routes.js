@@ -150,7 +150,7 @@ router.get('/products/:id', (req, res, next) => {
 // *******************************************
 //  POST/CREATE Route
 
-router.post('/products', requireToken, (req, res, next) => {
+router.post('/products',requireToken,  (req, res, next) => {
 	// set owner of new product to be current user
 	req.body.product.owner = req.user.id
 
