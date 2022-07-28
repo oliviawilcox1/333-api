@@ -118,6 +118,8 @@ router.get('/products/makeup', (req, res, next) => {
 		.catch(next)
 })
 
+// *******************************************
+//  Price Route
 
 router.get('/products/price', (req, res, next) => {
 	Product.find({price: {$lt: 20}})
