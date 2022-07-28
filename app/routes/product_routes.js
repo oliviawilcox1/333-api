@@ -119,6 +119,18 @@ router.get('/products/makeup', (req, res, next) => {
 })
 
 
+router.get('/products/price', (req, res, next) => {
+	Product.find({price: {$lt: 20}})
+		.then((price) => {
+			return price.map((price) => price.toObject())
+		})
+		.then((price) => res.status(200).json({ price: price }))
+		.catch(next)
+})
+
+
+
+
 // *******************************************
 //  Show Route
 
@@ -192,19 +204,9 @@ router.delete('/products/:id', requireToken, (req, res, next) => {
 		.catch(next)
 })
 
-
-
-
-
-
-
-
-
-
 // *******************************************
 //  Favorites Routes
 // *******************************************
-
 
 
 router.get('/favorites', (req, res, next) => {
@@ -212,28 +214,20 @@ router.get('/favorites', (req, res, next) => {
 		.populate('product')
 		.populate('owner')
 		.then((favorites) => {
-			// `favorites` will be an array of Mongoose documents
-			// we want to convert each one to a POJO, so we use `.map` to
-			// apply `.toObject` to each one
 			return favorites.map((favorite) => favorite.toObject())
 		})
-		// respond with status 200 and JSON of the examples
 		.then((favorites) => res.status(200).json({ favorites: favorites }))
-		// if an error occurs, pass it to the handler
 		.catch(next)
 })
 
 router.post('/favorites', requireToken, (req, res, next) => {
 	// set owner of new favorite to be current user
 	req.body.favorite.owner = req.user.id
-
-
 	Favorite.create(req.body.favorite)
 		// respond to succesful `create` with status 201 and JSON of new "favorite"
 		.then((favorite) => {
 			res.status(201).json({ favorite: favorite.toObject() })
 		})
-		// if an error occurs, pass it off to our error handler
 		// the error handler needs the error message and the `res` object so that it
 		// can send an error message back to the client
 		.catch(next)
