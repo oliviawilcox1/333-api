@@ -23,6 +23,7 @@ const startProducts = [
     ingredients: "WATER / AQUA / EAU, GLYCERIN, PROPANEDIOL, PANTHENOL, PENTAERYTHRITYL TETRAETHYLHEXANOATE, HYDROGENATED POLY(C6-14 OLEFIN), 1,2-HEXANEDIOL, POLYMETHYLSILSESQUIOXANE, AMMONIUM ACRYLOYLDIMETHYLTAURATE/VP COPOLYMER, TREHALOSE, GLYCERYL STEARATE CITRATE, HYDROXYETHYL ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE COPOLYMER, C14-22 ALCOHOLS, ARACHIDYL ALCOHOL, GLYCERYL STEARATE, GLYCERYL CAPRYLATE, BEHENYL ALCOHOL, C12-20 ALKYL GLUCOSIDE, ETHYLHEXYLGLYCERIN, ARACHIDYL GLUCOSIDE, BUTYLENE GLYCOL, DISODIUM EDTA, SORBITAN ISOSTEARATE, ALLANTOIN, MADECASSOSIDE, SCUTELLARIA BAICALENSIS ROOT EXTRACT, GLUCOSE, CAMELLIA SINENSIS LEAF EXTRACT, TOCOPHEROL",
     target: "Dehyrdrated, Acne Prone, Combiniation and Sensitive Skin. ",
     instructions: "Apply a generous amount and smooth over skin in the morning before sunscreen, and as the last step in your skin routine in the evening.",
+    type: "moisturizer",
  },{
     name:  "Centella Unscented Serum" ,
     image:  "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/pit/pit10031/v/4.jpg", 
@@ -37,6 +38,7 @@ const startProducts = [
     ingredients: "Centella asiatica extract(49%), water, glycerin, dipropylene glycol, niacinamide, butylene glycol, 1,2-hexanediol, glycereth-26, ceramide np, sodium hyaluronate, asiaticoside, asiatic acid, madecassic acid, palmitoyl hexapeptide-12, palmitoyl tripeptide-1, palmitoyl tetrapeptide-7, palmitoyl dipeptide-10, carbomer, arginine, sclerotium gum, hydrolyzed jojoba esters, caprylyl glycol, polyglyceryl-10 myristate, panthenol, polyglyceryl-10 laurate, hydrogenated lecithin, camellia sinensis leaf extract, pancratium maritimum extract, dipotassium glycyrrhizate, disodium edta, adenosine.",
     target: "All Skin Types, especially those with sensitive skin types or a damaged skin barrier.",
     instructions: "Apply 1 to 2 pumps to the face after toner or essence and gently rub in. ",
+    type: "serum",
 },{
     name:  "Propolis + Honey Extract" ,
     image:  "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT4UGzxR3qSbx2rMY17Ai3glKj9diewzAuPJ5aEsP_mFeZUkYup4WHQEeckHUjO0ZHIKSLeNicG5mca8x6gOM8KXG976Iol", 
@@ -51,6 +53,7 @@ const startProducts = [
     ingredients: "Propolis Extract, Honey Extract, Sodium Hyaluronate, Butylene Glycol, 1,2-Hexanediol, Ethylhexylglycerin",
     target: "All Skin Types, especially sensitive skin or those who are acne-prone.",
     instructions: "Apply to a freshly-washed face by either patting gently into the skin or using a cotton pad.",
+    type: "toner",
 },{
     name:  "Skin Perfecting 2% BHA Liquid Exfoliant" ,
     image:  "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf0fd0988/images/products/skin-perfecting-2-percent-bha-liquid-2010-L.png?sw=360&sfrm=png", 
@@ -65,6 +68,7 @@ const startProducts = [
     ingredients: "Water, Methylpropanediol, Butylene Glycol, Salicylic Acid, Polysorbate 20, Camellia Oleifera, Sodium Hydroxide, Tetrasodium EDTA",
     target: "All Skin Types, especially those who are acne-prone or skin that needs brightening.",
     instructions: "Apply gently to the skin either by patting or using a cotton pad after cleansing and toning and before the rest of your skincare. Start by gradually using every other day then increasing to daily. Always follow with SPF in the morning.",
+    type: "toner",
 }
 
 
