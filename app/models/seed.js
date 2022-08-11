@@ -69,11 +69,9 @@ const startProducts = [
     target: "All Skin Types, especially those who are acne-prone or skin that needs brightening.",
     instructions: "Apply gently to the skin either by patting or using a cotton pad after cleansing and toning and before the rest of your skincare. Start by gradually using every other day then increasing to daily. Always follow with SPF in the morning.",
     type: "toner",
-},
-
-{
+},{
     name:  "The Kure Intense Bond Repair Hair Mask" ,
-    image:  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_vgkvD18gcAqmHkU9OLS2btzej7yxje_8Q&usqp=CAU", 
+    image:  "https://cdn.shopify.com/s/files/1/2117/1151/products/amika_220228_PDP_Repair_Collection_Mask_250ml_2885-RGB-trans-shadow-2000x2000_1000x.png?v=1647627490", 
     brand: "amika",
     description: "An ultra-moisturizing hair mask that is clinically proven to significantly hydrate, repair, strengthen, and improve manageability. This mask will manage dryness, damage, split ends and breakage through 3 nutrient-rich plant butters, vegan proteins, and sea buckthorn. It is vegan and cruelty free.",
     kbeauty: false,
@@ -82,26 +80,28 @@ const startProducts = [
     category: "Haircare",
     wheretobuy: "Sephora, loveamika.com",
     ingredienthighlights: "Mango butter, Borage oil, Shea butter and Sea Buckthorn rich in fatty-acid Omega 7's.",
-    ingredients: "",
+    ingredients: "Water/Aqua/Eau, Cetearyl Alcohol, Cetyl Alcohol, Isopropyl Myristate, Behentrimonium Chloride, Dimethicone, Glycerin, Panthenol, Hippophae Rhamnoides (Sea Buckthorn/Argousier) Fruit/Seed Oil, Borago Officinalis (Borage/Bourrache) Seed Oil, Mangifera Indica (Mango/Mangue) Seed Butter, Butyrospermum Parkii (Shea/Karite) Butter, Hydroxypropyl Guar Hydroxypropyltrimonium Chloride, Hydrolyzed Quinoa, Tocopheryl Acetate, Cetrimonium Chloride, Magnesium Aluminum Silicate, Butylene Glycol, Bis-PCA Dimethicone, Disodium PEG-12 Dimethicone Sulfosuccinate, Aminomethyl Propanol, Chlorphenesin, BHT, Ethylhexylglycerin, Citric Acid, Isopropyl Alcohol, Phenoxyethanol, Benzyl Alcohol, Potassium Sorbate, Sodium Benzoate, Fragrance/Parfum, Benzyl Benzoate, Hydroxycitronellal, Limonene antistatic agent/agent antistatique.",
     target: "For Straight, Wavy and Curly Hair with Medium to Thick Hiar Texture.",
-    instructions: "",
+    instructions: "After cleansing, apply through damp hair saturating the middle to the ends of hair. Leave on for 5 to 10 minutes then rinse. Use weekly.",
     type: "hair mask",
-},{
-    name:  "Skin Perfecting 2% BHA Liquid Exfoliant" ,
-    image:  "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf0fd0988/images/products/skin-perfecting-2-percent-bha-liquid-2010-L.png?sw=360&sfrm=png", 
-    brand: "Paula's Choice",
-    description: "A gentle leave-on exfoliant with salicylic acid that helps to unclogs pores, smooth wrinkles, and even out skin tone. It can help minimize the appearance of enlarged pores and has a lightweight texture. This product is vegan and cruelty free.",
-    kbeauty: false,
-    size: "4 fl. oz / 118ml",
-    price: 32.00,
-    category: "Skincare",
-    wheretobuy: "Paula's Choice, Sephora",
-    ingredienthighlights: "Salicylic Acid and Green Tea",
-    ingredients: "Water, Methylpropanediol, Butylene Glycol, Salicylic Acid, Polysorbate 20, Camellia Oleifera, Sodium Hydroxide, Tetrasodium EDTA",
-    target: "All Skin Types, especially those who are acne-prone or skin that needs brightening.",
-    instructions: "Apply gently to the skin either by patting or using a cotton pad after cleansing and toning and before the rest of your skincare. Start by gradually using every other day then increasing to daily. Always follow with SPF in the morning.",
-    type: "toner",
 }
+
+// {
+//     name:  "Skin Perfecting 2% BHA Liquid Exfoliant" ,
+//     image:  "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf0fd0988/images/products/skin-perfecting-2-percent-bha-liquid-2010-L.png?sw=360&sfrm=png", 
+//     brand: "Paula's Choice",
+//     description: "A gentle leave-on exfoliant with salicylic acid that helps to unclogs pores, smooth wrinkles, and even out skin tone. It can help minimize the appearance of enlarged pores and has a lightweight texture. This product is vegan and cruelty free.",
+//     kbeauty: false,
+//     size: "4 fl. oz / 118ml",
+//     price: 32.00,
+//     category: "Skincare",
+//     wheretobuy: "Paula's Choice, Sephora",
+//     ingredienthighlights: "Salicylic Acid and Green Tea",
+//     ingredients: "Water, Methylpropanediol, Butylene Glycol, Salicylic Acid, Polysorbate 20, Camellia Oleifera, Sodium Hydroxide, Tetrasodium EDTA",
+//     target: "All Skin Types, especially those who are acne-prone or skin that needs brightening.",
+//     instructions: "Apply gently to the skin either by patting or using a cotton pad after cleansing and toning and before the rest of your skincare. Start by gradually using every other day then increasing to daily. Always follow with SPF in the morning.",
+//     type: "toner",
+// }
 
 
 
