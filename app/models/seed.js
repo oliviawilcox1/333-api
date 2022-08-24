@@ -118,7 +118,7 @@ const startProducts = [
 
 {
     name:  "The Body Exfoliator" ,
-    image:  "", 
+    image:  "https://img.ssensemedia.com/images/212527M650004_1/necessaire-the-body-exfoliator-eucalyptus-250-ml.jpg", 
     brand: "Necessaire",
     description: "A weekly multi-exfoliant for skin health—available in fragrance-free and in essential oil blends: Eucalyptus and Sandalwood.",
     kbeauty: false,
@@ -126,10 +126,10 @@ const startProducts = [
     price: 30.00,
     category: "Bodycare",
     wheretobuy: "Sephora, Necessaire",
-    ingredienthighlights: "",
-    ingredients: "",
-    target: "",
-    instructions: "",
+    ingredienthighlights: "Bamboo charcoal, Glycolic Acid and Salicylic Acid",
+    ingredients: "Water (Aqua), Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Betaine, Pumice, Glycerin, Propanediol, Acrylates Crosspolymer-4, Sclerocarya Birrea Seed Oil, Salicylic Acid, Glycolic Acid, Lactic Acid, Tocopherol, Niacinamide, Gluconolactone, Charcoal Powder, Zea Mays (Corn) Starch, Mannitol, Microcrystalline Cellulose, Amylopectin, Dextrin, Polydextrose, Sodium Benzoate, Sodium PCA, Calcium Gluconate, Eucalyptus Globulus (Eucalyptus) Leaf Oil, Lavandula Angustifolia (Lavender) Oil, Abies Sibirica (Siberian Fir) Oil, Zingiber Officinale (Ginger) Root Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Pogostemon Cablin (Patchouli) Oil.",
+    target: "All Skin Types",
+    instructions: "Use one to two times a week or as desired. Apply all over the body. Massage for foam. Rinse well.",
     type: "body exfoliant",
 }, {
     name:  "High Roller Ingrown Hair Tonic with AHA and BHA" ,
